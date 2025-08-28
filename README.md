@@ -1,24 +1,47 @@
-# README
+# Lab Exercise 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository contains **Lab Exercise 1** for **QCPE110**.  
+It is a Ruby on Rails application that implements a simple relationship between **customers** and **accounts**.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## Requirements
+- docker
+- docker compose
 
-* System dependencies
+---
 
-* Configuration
+## How to Run:
 
-* Database creation
+### 1. Build the containers
+```bash
+docker compose build --no-cache
+```
+### 2. Start the Application
+```bash
+docker compose up
+```
+### 3. Access the app at
+```
+http://localhost:3005
+```
 
-* Database initialization
+---
 
-* How to run the test suite
+## CRUD Customer
+Go to 
+```
+http://localhost:3005/customers
+```
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+## CRUD Accounts
+Go to 
+```
+http://localhost:3005/accounts
+```
 
-* Deployment instructions
+---
 
-* ...
+#### Hi Ma'am ❤️
+
