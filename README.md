@@ -5,6 +5,20 @@ It is a Ruby on Rails application that implements a simple relationship between 
 
 ---
 
+## Database Info
+
+### Customer
+- `name:string`
+- `email:string`
+- `contact_number:string`
+
+### Account
+- `type_of_account:string`
+- `balance:float`
+- `customer:references`
+
+---
+
 ## Requirements
 - docker
 - docker compose
