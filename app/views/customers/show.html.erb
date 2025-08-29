@@ -2,6 +2,25 @@
 
 <%= render @customer %>
 
+<h3>List of Accounts</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customer.accounts.each do |account| %>
+      <tr>
+        <td><%= account.type_of_account %></td>
+        <td><%= account.balance %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <div>
   <%= link_to "Edit this customer", edit_customer_path(@customer) %> |
   <%= link_to "Back to customers", customers_path %>
